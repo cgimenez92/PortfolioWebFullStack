@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="javascript" type="text/javascript">
+        
+        let phrase = prompt("Escribir una frase");
+        let aPhrase = Array.from(phrase);
+
+        let letterACapShows = aPhrase.filter(element => element == 'A');
+        let letterALowShows = aPhrase.filter(element => element == 'a');
+
+        let qLetterA = letterACapShows.length + letterALowShows.length;
+
+        document.write(qLetterA); 
+    </script>
+</body>
+</html>
